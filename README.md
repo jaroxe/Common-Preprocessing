@@ -1,5 +1,5 @@
 # Consistent-Preprocessing
-Consistent pre-processing for training and test sets
+Consistent preprocessing for training and test sets
 
 Sometimes, after training a Machine Learning model, we would like to test this model on previously unseen data. Before feeding this new data into our model we have to make sure that we apply the same preprocessing steps as we did to the original training set (when we first created our model).
 
