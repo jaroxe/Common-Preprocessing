@@ -1,9 +1,10 @@
 # Consistent-Preprocessing
 Consistent pre-processing for training and test sets
 
-Sometimes, after training a Machine Learning model, we would like to test this model on previously unseen data. Before feeding this new data into our model we have to make sure that we apply the same preprocessing steps to this data as we did to the original training set when we first created our model.
+Sometimes, after training a Machine Learning model, we would like to test this model on previously unseen data. Before feeding this new data into our model we have to make sure that we apply the same preprocessing steps as we did to the original training data when we first created our model.
+
 In particular, we have to make sure that our numericalization of categorical variables (the conversion of categories into numbers) is identical to that of the original training data.
-We also have to make sure that we fill missing values consistently in both training and test sets.
+We also have to make sure that we replace missing values consistently in both training and test sets.
 
 `consistent_preprocessing.py` contains functions that will perform these steps adequately.
 
