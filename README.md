@@ -53,7 +53,7 @@ Very likely, our response variable (what we would like to predict) will be conta
 
 The `process_df` function will perform all the above steps automatically. However, in some cases, it will be preferable to perform each step separately, in order to have more control over the process:
 
-    X_train, y_train, mappings, na_dict = process_df(train_df, y_name=‘resp’)
+    X_train, y_train, mappings, na_dict = process_df(train_df, y_name='resp')
     X_test, _, _ = process_df(test_df, mappings, na_dict)
 
 **Note**: Some of the functions in this repository were inspired by the fastai library.
