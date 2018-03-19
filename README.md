@@ -22,7 +22,9 @@ Now that all our non-numerical variables are categorical, we can proceed to conv
 `mappings` is a dictionary that contains the relationship between categories and numbers (which number has been assigned to each category) for each categorical variable. Using this dictionary we can now numericalize the test set `test_df` (unseen data) with identical mappings:
 
 *strings_to_cats(test_df)*
+
 *test_df = new_to_other(test_df, mappings)*
+
 *test_df, _ = cats_to_codes_plus1(test_df, mappings)*
 
 The second line of code in the above snippet makes sure that any categories that did not appear in the training set are grouped into a category named 'other', which our function will be able to handle.
@@ -51,6 +53,7 @@ Very likely, our response variable (what we would like to predict) will be conta
 The `process_df` function will perform all the above steps automatically. However, in some cases, it will be preferable to perform each step separately, in order to have more control over the process:
 
 *X_train, y_train, mappings, na_dict = process_df(train_df, y_name=‘resp’)*
+
 *X_test, _, _ = process_df(test_df, mappings, na_dict)*
 
 **Note**: Some of the functions in this repository were inspired by the fastai library.
