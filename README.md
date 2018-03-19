@@ -1,11 +1,11 @@
-# Common-Preprocessing
+# Consistent-Preprocessing
 Consistent pre-processing for training and test sets
 
 Sometimes, after training a Machine Learning model, we would like to test this model on previously unseen data. Before feeding this new data into our model we have to make sure that we apply the same preprocessing steps to this data as we did to the original training set when we first created our model.
 In particular, we have to make sure that our numericalization of categorical variables (the conversion of categories into numbers) is identical for the new data and the original training data.
 We also have to make sure that we fill missing values consistently in both training and test sets.
 
-`common_preprocessing.py` contains functions that will perform these steps adequately.
+`consistent_preprocessing.py` contains functions that will perform these steps adequately.
 
 How it works:
 
