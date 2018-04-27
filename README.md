@@ -8,7 +8,7 @@ We also have to make sure that we replace missing values consistently in both tr
 
 `consistent_preprocessing.py` contains functions that will perform these steps adequately.
 
-How it works:
+How it works (refer to step 4 for simple use):
 
 ### 1. Numericalize categorical variables
 
